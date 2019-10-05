@@ -138,3 +138,108 @@
 - RAM模块可以直接修改内存 配合debug调试
 - VRAM模块 图案 背景 精灵都是关于图像类调试
 - 由于我不太会用 就不详述了
+
+### 下面介绍FCEUX-2.2.2
+
+![fceux_debug](../image/fceux_debug.png "fceux_debug")
+
+Debug界面如上
+
+![fceux_debug_area](../image/fceux_debug_area.png "fceux_debug_area")
+
+这个就是调试区的功能按钮
+
+|命令|功能|
+|--|--|
+|Run|运行| 
+|Step Into|单步运行|
+|Step Out|步出(jsr这种跳转就是跳到下一层 不关系这层的话 可以跳出)|
+|Step Over|步跃(jsr这种跳转可以直接运行完跳回来)|
+|Run Line|行跃(具体我没用过)|
+|128 Lines|我也没用过|
+|Seek To|直接跳到后面所示逻辑地址|
+|PC|程序计数器(不要随意修改 除非你明白你在做什么)|
+|Seek PC|跳到PC所示地址|
+
+![fceux_debug_register_area](../image/fceux_debug_register_area.png "fceux_debug_register_area")
+
+| |说明|
+|--|--|
+|A|累加寄存器 A |
+|X|变址寄存器 X |
+|Y|变址寄存器 Y |
+|Stack|堆栈指针(stack point)(下面是栈内容)|
+
+![fceux_debug_flag_area](../image/fceux_debug_flag_area.png "fceux_debug_flag_area")
+
+这个是标志P 对勾代表标志为1 没有代表0
+
+![fceux_debug_breakpoint_area](../image/fceux_debug_breakpoint_area.png "fceux_debug_breakpoint_area")
+
+这个是断点区 下面Break on Bad Opcodes是坏码中断
+改程序的时候 容易出现坏码 可以运行到坏码就暂停
+配合Trace Logger(日志)非常容易追踪
+后面会详述日志用法
+
+![fceux_debug_add_breakpoint_area](../image/fceux_debug_add_breakpoint_area.png "fceux_debug_add_breakpoint_area")
+
+| |功能|
+|--|--|
+|Add|添加断点条件|
+|Address|是逻辑地址 可以是区域|
+|Read|是对上面地址操作读|
+|Write|是写|
+|Execute|是执行|
+|Memory|选项是在哪个区域 有三个区域 CPU PPU(等同于图案) 精灵|
+|Condition|是条件 以后慢慢讲|
+|Name|是标识 给自己看的|
+
+#### 拿A6举例
+
+![fceux_debug_example_breakpoint_area](../image/fceux_debug_example_breakpoint_area.png "fceux_debug_example_breakpoint_area")
+
+读操作
+ 
+![fceux_debug_example](../image/fceux_debug_example.png "fceux_debug_example")
+
+也断下来了 $F62D 同理
+其他功能请自行探索
+
+#### PPU Viewer 实质就是图案
+
+![fceux_ppu_viewer](../image/fceux_ppu_viewer.png "fceux_ppu_viewer")
+
+#### Name Table Viewer
+
+![fceux_name_table_viewer](../image/fceux_name_table_viewer.png "fceux_name_table_viewer")
+
+PPU地址图案 对应VRAM
+
+#### Hex Editor(默认是RAM)
+
+![fceux_hex_editor](../image/fceux_hex_editor.png "fceux_hex_editor")
+
+View可以修改是NES memory和PPU memory(对应ram和vram) Romfile是游戏文件
+
+- 可以直接像上面那个RAM 直接修改
+- 右单击可冻结(锁定)数值 加断点等功能 不详述
+- 其他的多摸索 file里有个 goto address 直接跳到目标地址
+
+#### Trace Logger
+
+这个一般做实在无法判断错误 拿出执行日志分析
+
+![fceux_trace_logger](../image/fceux_trace_logger.png "fceux_trace_logger")
+
+开始调试日志的话 先点start logging
+游戏速度会放缓 很正常 我们还拿a6举例子
+
+![fceux_trace_logger_example](../image/fceux_trace_logger_example.png "fceux_trace_logger_example")
+
+- 上面执行日志详述了到断点之前的运行过程
+- AXY是寄存器 S是stack P是标志 后面是执行内容
+- Breakpoint 显示断点停止
+
+#### 谢谢观赏
+ 
+![kowaiine](../image/kowaiine.png "kowaiine")
