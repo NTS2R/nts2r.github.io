@@ -5,7 +5,7 @@
 | -- | -- |
 | v2019.10.6.22.04 | [github下载](https://github.com/NTS2R/rom_tool_binary/releases/tag/v2019.10.6.22.04) |
 
-
+### 更新履历
 
 | 版本号 | 维护者 | 下载地址 | 更新内容 |
 | -- | -- | -- | -- |
