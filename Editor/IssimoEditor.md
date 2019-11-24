@@ -2,12 +2,13 @@
 
 | 最新版本 | 下载地址 | 源码浏览 |
 | -- | -- | -- |
-| v2019.08.24.07.53 | [github下载](https://github.com/NTS2R/nts2r_evo_editor/releases/tag/v2019.08.24.07.53) | [github](https://github.com/NTS2R/nts2r_evo_editor) |
+| v2019.11.24.21.52 | [github下载](https://github.com/NTS2R/nts2r_evo_editor/releases/tag/v2019.11.24.21.52) | [github](https://github.com/NTS2R/nts2r_evo_editor) |
 
 ### 更新履历
 
 | 版本号 | 维护者 | 下载地址 |
 | -- | -- | -- |
+| v2019.11.24.21.52 | 神琴 | [github下载](https://github.com/NTS2R/nts2r_evo_editor/releases/tag/v2019.11.24.21.52)|
 | v2019.08.24.07.53 | 神琴 | [github下载](https://github.com/NTS2R/nts2r_evo_editor/releases/tag/v2019.08.24.07.53)|
 | v2019.08.22.12.13 | 神琴 | [github下载](https://github.com/NTS2R/nts2r_evo_editor/releases/tag/v2019.08.22.12.13)|
 | v2019.08.12.12.17 | 神琴 | [github下载](https://github.com/NTS2R/nts2r_evo_editor/releases/tag/v2019.08.12.12.17)|
