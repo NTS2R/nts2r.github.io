@@ -4,8 +4,6 @@
 | -- | -- | -- |
 | v2019.11.25.18.52 | [github下载](https://github.com/NTS2R/nts2r_evo_editor/releases/tag/v2019.11.25.18.52)/[gitee下载](https://gitee.com/nts2r/nts2r_evo_editor/releases/v2019.11.25.18.52) | [github](https://github.com/NTS2R/nts2r_evo_editor)/[gitee](https://gitee.com/nts2r/nts2r_evo_editor)|
 
-v2019.11.25.18.52
-
 ### 更新履历
 
 | 版本号 | 维护者 | github | gitee |
